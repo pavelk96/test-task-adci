@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <title>Personal Folio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>MMLAMPADARI</title>
 </head>
 <body>
     <header class="header">
@@ -19,13 +22,55 @@
                 <img src="img/header-logo.png" alt="header-logo">
             </div>
             <div class="header__nav">
-                <div class="header__modal">
-                    <a>AREA RISERVATA</a>
+                <div class="header__modal-container">
+                    <a id="openModal">AREA RISERVATA</a>
+                    <div id="modal" class="header__modal">
+                        <div class="header__modal-content">
+                            <span class="header__modal__close">&times;</span>
+                            <div class="header__modal-header">
+                                <h1 class="modal-title">Area riservata</h1>
+                            </div>
+                            <div class="header__modal__body">
+                                <div class="header__modal__body__left">
+                                    <h1>ACCEDI</h1>
+                                    <input placeholder="  E-mail">
+                                    <input placeholder="  Password">
+                                    <button>ACCEDI</button>
+                                </div>
+                                <div class="header__modal__body__right">
+                                    <h1>REGISTRATI</h1>
+                                    <input placeholder="  Nome">
+                                    <input placeholder="  Cognome">
+                                    <input placeholder="  E-mail">
+                                    <input placeholder="  Password">
+                                    <label>
+                                        <input type="checkbox">Acconsento al trattamento dei dati
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">Mi iscrivo alla Newsletter
+                                    </label>
+                                    <button>ISCRIVITI</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <img src="img/lock.png" alt="lock">
                 </div>
                 <div class="header__menu">
                     <ul>
-                        <li>HOME</li>
+                        <li>
+                            <div class="header__dropdown">
+                                <span>HOME</span>
+                                <div class="header__dropdown__content">
+                                    <div class="header__dropdown__container">
+                                        <a href="#">STORIA</a>
+                                        <a href="#">MM DESIGN</a>
+                                        <a href="#">DESIGNER</a>
+                                        <a href="#">CERTIFICAZION</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li>AZIENDA</li>
                         <li>COLLEZIONI</li>
                         <li>NEWS</li>
@@ -36,14 +81,115 @@
         </div>
     </header>
     <div class="content">
+        <div class="content__description">
+            <h1 class="content__description__tittle">
+                Lampadari contemporanei
+            </h1>
+            <div class="content__description__body">
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore
+                </span>
+            </div>
+        </div>
+        <div class="slider">
+            <input type="radio" name="switch" id="btn1" checked>
+            <input type="radio" name="switch" id="btn2">
+            <input type="radio" name="switch" id="btn3">
+            <div class="switch">
+                <label for="btn1"></label>
+                <label for="btn2"></label>
+                <label for="btn3"></label>
+            </div>
+            <div class="slider-inner">
+                <div class="slides">
+                    <img src="./img/Fabulous-Modern-Pendant-Lamp-For-Dining-Room.png" alt="img-room"/>
+                    <img src="./img/Fabulous-Modern-Pendant-Lamp-For-Dining-Room.png" alt="img-room"/>
+                    <img src="./img/Fabulous-Modern-Pendant-Lamp-For-Dining-Room.png" alt="img-room"/>
+                </div>
 
+            </div>
+        </div>
+        <div class="content__mobile__block" id="content__mobile__block">
+            <div class="content__mobile__block__arrow-up"  id="scroll_up">
+                <div class="content__mobile__block__arrow-icon">
+                    <img src="img/up-arrow_icon.svg" alt="up-arrow_icon">
+                </div>
+            </div>
+            <div class="content__mobile__block__body">
+                <div class="content__mobile__block__content-left">
+                    <h1>Stai pensando ad un
+                        progetto?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+                    <a>Approfondisci</a>
+                </div>
+                <div class="content__mobile__block__content-center">
+                    <h1>Vi aspettiamo alla fiera
+                        Euroluce</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+                    <a>Approfondisci</a>
+                </div>
+                <div class="content__mobile__block__content-right">
+                    <h1>Scopri la nuova collezione</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+                    <a>Approfondisci</a>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__description">
-
+                <div class="footer__description__container">
+                    <h1 class="footer__description__tittle">Lampadari made in italy</h1>
+                    <p class="footer__description__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  </p>
+                </div>
+                <div class="footer__description__container">
+                    <h1 class="footer__description__tittle">lampadari artigianali</h1>
+                    <p  class="footer__description__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  </p>
+                </div>
+                <div class="footer__description__container">
+                    <h1 class="footer__description__tittle">45 anni di esperienza</h1>
+                    <p  class="footer__description__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  </p>
+                </div>
+                <div  class="footer__description__container">
+                    <h1>NEWSLETTER</h1>
+                    <input placeholder="  E-mail">
+                    <input placeholder="  Password">
+                    <button>ISCRIVITI</button>
+                    <label class="footer__description__newsletter-checkbox">
+                        <input type="checkbox">    Acconsento al trattamento dei dati
+                    </label>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <div class="footer__contact--text">
+                    <p>MMLAMPADARI srl </p>
+                    <p>Via Feltrina 00 </p>
+                    <p>31111 Pederobba  (TV)</p>
+                    <p>0423.123456</p>
+                    <p>info@mmlampadari.mm</p>
+                    <p>P.IVA 04123456789</p>
+                </div>
+                <div class="footer__contact--social">
+                    <img src="img/facebook.png" alt="facebook-icon"/>
+                    <img src="img/instagram.png" alt="instagram-icon"/>
+                    <img src="img/social-p.png" alt="social-p-icon"/>
+                </div>
+                <div class="footer__contact-lang">
+                    <p> ITA |</p>
+                    <p> ENG |</p>
+                    <p> DEU |</p>
+                    <p> РУС</p>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>
