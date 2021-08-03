@@ -1,0 +1,113 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 275px;
+  background-color: #353436;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  z-index: 3;
+  background-color: #353436;
+}
+.footer__description {
+  display: flex;
+  justify-content: space-between;
+  height: 220px;
+  width: 925px;
+  color: #d7d7d7;
+}
+.footer__description__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+  text-align: left;
+}
+.footer__description__container h1 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 14px;
+  padding-top: 20px;
+}
+.footer__description__container button {
+  width: 184px;
+  height: 31px;
+  margin-top: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  transition: color 0.3s linear, background-color 0.3s linear;
+}
+.footer__description__container button:hover {
+  background-color: white;
+  color: black;
+}
+.footer__description__container input {
+  width: 184px;
+  height: 31px;
+  margin: 6px;
+  border: none;
+  padding: 0;
+}
+.footer__description__tittle {
+  font-family: "Playfair Display SC", serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+.footer__description__body {
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+}
+.footer__description__newsletter-checkbox {
+  font-size: 10px;
+  margin-top: 10px;
+}
+.footer__description__newsletter-checkbox input {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+}
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  height: 20px;
+  width: 100%;
+}
+.footer__contact--text {
+  display: flex;
+}
+.footer__contact--text p {
+  padding-right: 15px;
+  color: #d7d7d7;
+  font-size: 12px;
+}
+.footer__contact--icon {
+  display: flex;
+  margin-left: auto;
+}
+.footer__contact-lang {
+  display: flex;
+  color: white;
+  font-size: 12px;
+  outline: none;
+}
+.footer__contact--social {
+  padding-right: 80px;
+}
+.footer__contact--social img {
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=footer.css.map */
